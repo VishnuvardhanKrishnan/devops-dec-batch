@@ -5,8 +5,8 @@ pipeline{
             steps{
                 sh """
                     pwd
-                    cd
-                    ping www.google.com
+                    cd /tmp
+                    touch test.txt
                     """
             }
         }
