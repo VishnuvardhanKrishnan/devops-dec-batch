@@ -12,7 +12,7 @@ pipeline {
                 stage('Job2'){
                     steps{
                         echo "Steps in Job2"
-
+                        sh('sleep 7')
                         timeout(time: 5, unit: 'SECONDS') {
                             echo "Timeout completed"
                         }
