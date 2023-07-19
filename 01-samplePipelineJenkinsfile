@@ -8,6 +8,7 @@ pipeline{
                     echo "welcome to the jenkins work"
                     echo "Good Morning Mohana Murali Gurunathan"
                     echo "Good Morning Mohan"
+                    echo "hi"
                     cd /tmp
                     touch test.txt
                     """
