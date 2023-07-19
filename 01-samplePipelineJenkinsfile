@@ -5,6 +5,7 @@ pipeline{
             steps{
                 sh """
                     pwd
+                    echo "welcome to the jenkins work"
                     cd /tmp
                     touch test.txt
                     """
