@@ -6,6 +6,7 @@ pipeline{
                 sh """
                     pwd
                     echo "welcome to the jenkins work"
+                    echo "Good Morning Mohana Murali Gurunathan"
                     cd /tmp
                     touch test.txt
                     """
