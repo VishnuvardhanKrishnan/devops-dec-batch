@@ -1,0 +1,35 @@
+pipeline {
+  
+  agent any
+  
+  environment {
+      name = "Vishnu"
+  }
+  
+  
+  stages {
+    
+    stage('Java') {
+      environment {
+        place = "Chennai"
+      }    
+      steps {
+        sh 'java --version'
+        echo "My Name is ${name}"
+        echo "I live in ${place}"
+        echo "Build number is ${BUILD_NUMBER}"
+      }
+    }
+    
+    stage('Terraform') {
+      steps {
+        sh 'terraform version'
+        echo "My Name is ${name}"
+        //echo "I live in ${place}"
+        echo "Job name is ${JOB_NAME}"
+        echo "Workspace path is ${WORKSPACE}"
+      }
+    }
+  
+  }
+}
